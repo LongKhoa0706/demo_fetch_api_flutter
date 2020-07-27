@@ -11,7 +11,6 @@ class API {
       var jsonData = reponse.data;
       for (var i in jsonData) {
         arrTodo.add(Todo.fromJson(i));
-
       }
     } else {
       throw Exception("Fail");

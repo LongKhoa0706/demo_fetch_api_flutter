@@ -28,6 +28,7 @@ dependencies:
   xml2json: ^4.1.1
   json_annotation: ^3.0.1
 
+
   dio: ^3.0.9
 
   cached_network_image: ^2.0.0
