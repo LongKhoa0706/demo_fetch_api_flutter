@@ -6,6 +6,7 @@ import 'package:fetchapiflutter/test4/home.dart';
 import 'package:fetchapiflutter/test5/test5.dart';
 import 'package:fetchapiflutter/test6/test6.dart';
 import 'package:fetchapiflutter/test7/test7.dart';
+import 'package:fetchapiflutter/test8/test8.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'model/model.dart';
@@ -135,6 +136,12 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Text("Test 7 "),
               onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (_)=>Test7()));
+              }
+          ),
+          RaisedButton(
+              child: Text("Test 8 "),
+              onPressed: (){
+                Navigator.push(context, MaterialPageRoute(builder: (_)=>Test8()));
               }
           ),
         ],

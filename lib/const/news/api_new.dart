@@ -7,7 +7,6 @@ import 'package:http/http.dart' as http;
 class Api_new {
   List<Artical_model> news = [];
    Future<void> getDataNews() async {
-
     var dio = Dio();
     String url = 'http://newsapi.org/v2/top-headlines?country=us&apiKey=554a1d9082b048b9a5677d56b556bc25';
     var reponse = await dio.get(url);
@@ -28,8 +27,9 @@ class Api_new {
       });
     }
   }
-  Future<void> getDataCategoriesNews(String categories) async {
 
+
+  Future<void> getDataCategoriesNews(String categories) async {
     var dio = Dio();
     String url = 'http://newsapi.org/v2/top-headlines?country=us&category=$categories&apiKey=554a1d9082b048b9a5677d56b556bc25';
     var reponse = await dio.get(url);

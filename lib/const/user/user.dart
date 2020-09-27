@@ -10,7 +10,6 @@ class API {
     var jsonRes = res.data;
     List abc = jsonRes;
     arrUser = abc.map((e) => User.fromJson(e)).toList();
-    print(arrUser.length);
     return arrUser;
 
   }

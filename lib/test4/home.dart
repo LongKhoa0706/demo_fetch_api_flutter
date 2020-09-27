@@ -1,5 +1,6 @@
 
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:fetchapiflutter/const/news/api_new_fix.dart';
 import 'package:fetchapiflutter/test4/artical_model.dart';
 import 'package:fetchapiflutter/test4/category_model.dart';
 import 'package:fetchapiflutter/test4/category_news.dart';
@@ -35,7 +36,7 @@ class _HomeState extends State<Home> {
   }
   @override
   Widget build(BuildContext context) {
-
+    Api_new_fix().getDataNews();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
